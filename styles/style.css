@@ -24,6 +24,7 @@ h1 {
 @media only screen and (max-width: 950px) {
   h1 {
     font-size: 60px;
+    text-align: center;
   }
 }
 p {
@@ -34,6 +35,7 @@ p {
 @media only screen and (max-width: 950px) {
   p {
     font-size: 40px;
+    text-align: center;
   }
 }
 
