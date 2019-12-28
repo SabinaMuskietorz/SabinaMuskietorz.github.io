@@ -45,7 +45,7 @@ p {
 i {
     position: fixed;
     bottom: 10%;
-    color: blueviolet;
+    color: white;
     font-size: 48px;
     
     display: inline;
@@ -79,7 +79,6 @@ ul {
     position: fixed;
     top: 50px;
     left:0;
-    background: blueviolet;
     padding: 20px 10%;
     font: 24px/1 Helvetica, Verdana, sans-serif;
     width: 100%;
@@ -99,7 +98,7 @@ ul {
  
   li a {
     text-decoration: none;
-    color: black;
+    color: white;
     text-transform: lowercase;
     transition: all 0.5s ease;
   }
@@ -120,7 +119,7 @@ ul {
 
   a.btn {
     padding: 15px;
-    background-color: blueviolet;
+    
     color:white;
     text-decoration: none;
     cursor: pointer;
