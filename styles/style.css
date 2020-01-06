@@ -89,8 +89,15 @@ body {
   transform: translate(-50%,-50%);
   white-space: nowrap;
 }
-      
-      h4 {
+.myphoto {
+  border-style: none;
+  border-radius: 100%;
+  transition: background-size 0.3s ease;
+  filter: grayscale(1);
+  position: relative;
+  float: left;
+   } 
+       h4 {
         font-family: 'Roboto Slab', serif;
           font-size: 70px;
           color: black;
@@ -205,15 +212,15 @@ body {
           margin:1.5em;
       }
       .top-header {
-          width:100%;
-          height:200px;
+          width:40%;
+         padding-top: 10%;
           float:left;
          color:black; 
       }
       .centre{
-          text-align:center;
-          font-family: 'Alfa Slab One', cursive;
-      }
+        text-align:center;
+        font-family: 'Roboto Slab', serif;
+    }
       .leftColumn {
       width:50%;
       
@@ -236,7 +243,101 @@ body {
         display: block;
       }
       form {
-        margin-top: 80px;
+        margin-top: 100px;
         }
-    
+        .input-block {
+          width: 15%;
+          float: left;
+          margin: 3.3%;
+          position: relative;
+          margin-bottom: 60px;
+        }
+        .input-block:nth-child(3n) {
+          margin-right: 0px;
+        }
+        .input-block input{
+          width: 100%;
+          border: none;
+          outline: none;
+          border-bottom: 2px solid #dddddd;
+          font-size: 16px;
+          font-family: inherit;
+        }
+        .textarea-block {
+          clear: both;
+          width: 30%;
+          position: relative;
+          padding-left: 10px;
+        }
+        .textarea-block textarea {
+          width: 100%;
+          resize: none;
+          border: none;
+          outline: none;
+          border-bottom: 2px solid #dddddd;
+          
+          font-size: 16px;
+          font-family: inherit;
+          padding-left: 10px;
+        }
+        .textarea-block label,.input-block label {
+  color: #696969;
+  font-size: 14px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  transition: all 0.2s linear 0s;
+}
+.textarea-block textarea[required="required"] + label:after,
+.input-block input[required="required"] + label:after {
+  content: "*";
+}
+form button[type="submit"] {
+  border: 0px;
+  outline: 0px;
+  color: #fff;
+  background-color: #f10708;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding: 20px 40px;
+  border-radius: 100px;
+  margin: 40px auto;
+  display: block;
+  cursor: pointer;
+  transition: all 0.3s linear 0s;
+}
+/* hover and click effects */
+@keyframes btn-animation {
+  from {
+    transform: scale(1);
+  }
+  
+  to {
+    transform: scale(0.95);
+  }
+}
+
+form button[type="submit"]:active {
+  animation: btn-animation 0.2s linear 0s alternate 2;
+}
+
+form button[type="submit"]:hover {
+  background-color: #bf0c0c;
+}
+
+.input-block input:focus + label,
+.textarea-block textarea:focus + label,
+.input-block input.active + label,
+.textarea-block textarea.active + label{
+  top: -30px;
+}
+
+
+
+
+
+
     
