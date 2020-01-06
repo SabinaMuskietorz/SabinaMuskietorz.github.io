@@ -1,4 +1,8 @@
-
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+}
 body {
   
     font-family: 'Roboto Slab', serif;
@@ -14,12 +18,70 @@ body {
     filter: opacity(70%);
     margin: 0;
     }
-     
+     h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: #ef4fa6;
+   }
  hr {
       z-index: 1;
       border :0;
       border-top: 1px solid rgba(0,0,0,0.1);
     }
+
+.gallery-item {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: all .3s;
+    overflow: hidden;
+    position: relative;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap: 2.5rem;
+    grid-auto-rows: minmax(115px, auto);
+    padding: 10%;
+    margin: 0;
+    
+}
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    object-fit: cover;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.gallery-item:hover .image {
+    filter: grayscale(1);
+}
+.gallery-item:hover .middle {
+    opacity: 1;
+}
+.gallery-item:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+}
+.text {
+    color: white;
+    font-size: 2.5em;
+    padding: 16px 32px;
+    font-family: 'Roboto Slab', serif;
+}
+
   .header-title {
   position: fixed;
   top:40%;
@@ -122,3 +184,59 @@ body {
           font-weight: bold;
           color: #333;
         }
+        
+
+        @media (max-width: 500px) {
+            .gallery-item, body {
+                max-width: 30%;
+                grid-column: 2;
+                font-family: 'Roboto Slab', serif;
+                text-align: left;
+            }
+            div.myportf, h1 {
+                text-align: left;
+                margin-left: 2em;
+            }
+            div.text {
+                font-size: 2.5em;
+            } 
+        }
+        p3 {
+          margin:1.5em;
+      }
+      .top-header {
+          width:100%;
+          height:200px;
+          float:left;
+         color:black; 
+      }
+      .centre{
+          text-align:center;
+          font-family: 'Alfa Slab One', cursive;
+      }
+      .leftColumn {
+      width:50%;
+      
+      float:left;
+      }
+      .rightColumn {
+          width:50%;
+          
+          float:right;
+     }
+      footer{
+          margin-bottom:0;
+          color:white;
+          width:100%;
+          
+          float:left;
+          text-align:center;
+      }
+      .contactform {
+        display: block;
+      }
+      form {
+        margin-top: 80px;
+        }
+    
+    
