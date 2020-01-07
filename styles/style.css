@@ -159,7 +159,6 @@ p4 {
     width: 100%;
   }
 }
-
 /* contact styles*/
 .top-header {
   top: 15%;
@@ -210,11 +209,9 @@ form {
     border: none;
     outline: none;
     border-bottom: 2px solid #dddddd;
-    
     font-size: 16px;
     font-family: inherit;
-    
-  }
+    }
   .textarea-block label,.input-block label {
 color: #696969;
 font-size: 14px;
@@ -223,7 +220,6 @@ position: absolute;
 top: 0px;
 left: 10px;
 transition: all 0.2s linear 0s;
-
 }
 .textarea-block textarea[required="required"] + label:after,
 .input-block input[required="required"] + label:after {
