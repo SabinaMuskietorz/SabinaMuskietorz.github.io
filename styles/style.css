@@ -235,7 +235,7 @@ h4 {
         }
         
 
-        @media (max-width: 500px) {
+        @media (max-width: 350px) {
             .gallery-item, body {
                 max-width: 100%;
                 grid-column: 2;
@@ -243,14 +243,17 @@ h4 {
                 text-align: left;
               }
                 .gallery {
-                padding-top: 5px;
+                padding-top: 30px;
                 }
                 form {
                   position: fixed;
-                  top: 20%;
-                  
-                  width: 70px;
+                  top: 30%;
+                   width: 70px;
                   }    
+                  form button {
+                    position: fixed;
+                    top: 60%;
+                  }
                 .centre {
                   max-width: 20%;
                 }  
