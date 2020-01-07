@@ -31,11 +31,7 @@ body {
     font-family: 'Roboto Slab', serif;
     color: #ef4fa6;
    }
- hr {
-      z-index: 1;
-      border :0;
-      border-top: 1px solid rgba(0,0,0,0.1);
-    }
+
 
 .gallery-item {
     max-width: 100%;
@@ -46,13 +42,12 @@ body {
     position: relative;
 }
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     grid-gap: 2.5rem;
     grid-auto-rows: minmax(115px, auto);
     padding: 10%;
     margin: 0;
-    
 }
 .image {
     opacity: 1;
