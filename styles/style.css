@@ -8,6 +8,7 @@ h1 {
   top: 25%;
   right: 10%;
   padding: 2%;
+  font-weight: bold;
 }
 body {
   font-family: 'Roboto Slab', serif;
@@ -85,6 +86,7 @@ body {
     font-size: 2.5em;
     padding: 16px 32px;
     font-family: 'Roboto Slab', serif;
+
 }
 
   .header-title {
@@ -96,16 +98,20 @@ body {
 }
 .myphoto {
   border-style: none;
-  border-radius: 100%;
-  transition: background-size 0.3s ease;
-  filter: grayscale(1);
+    border-radius: 100%;
+    filter: grayscale(0);
   position: fixed;
   top: 20%;
   left: 10%;
   width: 200px;
 }
-p3 {
-  margin:1.5em;
+.myphoto:hover {
+  filter: grayscale(1);
+  border-style: none;
+  border-radius: 100%;
+  transition: background-size 0.3s ease;
+  filter: grayscale(1);
+  transition: background-size 0.3s
 }
 .resume-header {
  display: inline;
@@ -117,8 +123,8 @@ p3 {
  
 }
 .top-header {
-  top: 20%;
- left: 5%;
+  top: 15%;
+ left: 20%;
  position: fixed;
  color:black; 
  font-size: 20px;
@@ -128,7 +134,6 @@ p3 {
 float: left;
 font-family: 'Roboto Slab', serif;
 padding: 5% 5%;
-
 }
 .leftColumn {
 width:50%;
@@ -137,18 +142,9 @@ float:left;
 }
 .rightColumn {
   width:50%;
-  
   float:right;
 }
-footer{
-  margin-bottom:0;
-  color:white;
-  width:100%;
-  
-  float:left;
-  text-align:center;
-}
-       h4 {
+h4 {
         font-family: 'Roboto Slab', serif;
           font-size: 70px;
           color: black;
@@ -267,11 +263,12 @@ footer{
         padding-top: 10%;
         }
         .input-block {
-          width: 15%;
+          width: 10%;
           float: left;
           margin: 3.3%;
           position: relative;
           margin-bottom: 60px;
+          padding-left: 1%;
         }
         .input-block:nth-child(3n) {
           margin-right: 0px;
@@ -283,12 +280,17 @@ footer{
           border-bottom: 2px solid #dddddd;
           font-size: 16px;
           font-family: inherit;
+         
+          
         }
         .textarea-block {
           clear: both;
-          width: 30%;
+          width: 50%;
           position: relative;
           padding-left: 10px;
+          margin: 3.3%;
+          
+         
         }
         .textarea-block textarea {
           width: 100%;
@@ -299,7 +301,7 @@ footer{
           
           font-size: 16px;
           font-family: inherit;
-          padding-left: 10px;
+          
         }
         .textarea-block label,.input-block label {
   color: #696969;
@@ -309,6 +311,7 @@ footer{
   top: 0px;
   left: 10px;
   transition: all 0.2s linear 0s;
+  
 }
 .textarea-block textarea[required="required"] + label:after,
 .input-block input[required="required"] + label:after {
@@ -318,7 +321,7 @@ form button[type="submit"] {
   border: 0px;
   outline: 0px;
   color: #fff;
-  background-color: #f10708;
+  background-color:#ef4fa6;
   text-transform: uppercase;
   font-family: 'Roboto Slab', serif;
   font-size: 18px;
@@ -329,6 +332,10 @@ form button[type="submit"] {
   display: block;
   cursor: pointer;
   transition: all 0.3s linear 0s;
+  position: fixed;
+  left: 15%;
+  margin: 3.3%;
+  
 }
 /* hover and click effects */
 @keyframes btn-animation {
@@ -346,7 +353,7 @@ form button[type="submit"]:active {
 }
 
 form button[type="submit"]:hover {
-  background-color: #bf0c0c;
+  background-color:#424242;
 }
 
 .input-block input:focus + label,
