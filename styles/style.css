@@ -1,11 +1,16 @@
 h1 {
-  text-align: center;
   text-transform: uppercase;
   font-family: 'Roboto Slab', serif;
 }
+.resume {
+  font-family: 'Roboto Slab', serif;
+  position: fixed;
+  top: 25%;
+  right: 10%;
+  padding: 2%;
+}
 body {
-  
-    font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab', serif;
     background: url("desk-laptop-macbook-pro-working-69432.jpg");
     background-size: cover;
     background-position: center;
@@ -94,9 +99,55 @@ body {
   border-radius: 100%;
   transition: background-size 0.3s ease;
   filter: grayscale(1);
-  position: relative;
-  float: left;
-   } 
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  width: 200px;
+}
+p3 {
+  margin:1.5em;
+}
+.resume-header {
+ display: inline;
+ top: 20%;
+ right: 15%;
+ position: fixed;
+ color:black; 
+ font-size: 14px;
+ 
+}
+.top-header {
+  top: 20%;
+ left: 5%;
+ position: fixed;
+ color:black; 
+ font-size: 20px;
+}
+
+.centre{
+float: left;
+font-family: 'Roboto Slab', serif;
+padding: 5% 5%;
+
+}
+.leftColumn {
+width:50%;
+padding-top: 10%;
+float:left;
+}
+.rightColumn {
+  width:50%;
+  
+  float:right;
+}
+footer{
+  margin-bottom:0;
+  color:white;
+  width:100%;
+  
+  float:left;
+  text-align:center;
+}
        h4 {
         font-family: 'Roboto Slab', serif;
           font-size: 70px;
@@ -208,42 +259,12 @@ body {
                 font-size: 2.5em;
             } 
         }
-        p3 {
-          margin:1.5em;
-      }
-      .top-header {
-          width:40%;
-         padding-top: 10%;
-          float:left;
-         color:black; 
-      }
-      .centre{
-        text-align:center;
-        font-family: 'Roboto Slab', serif;
-    }
-      .leftColumn {
-      width:50%;
-      
-      float:left;
-      }
-      .rightColumn {
-          width:50%;
-          
-          float:right;
-     }
-      footer{
-          margin-bottom:0;
-          color:white;
-          width:100%;
-          
-          float:left;
-          text-align:center;
-      }
+       
       .contactform {
         display: block;
       }
       form {
-        margin-top: 100px;
+        padding-top: 10%;
         }
         .input-block {
           width: 15%;
