@@ -1,3 +1,4 @@
+/*about styles*/
 h1 {
   text-transform: uppercase;
   font-family: 'Roboto Slab', serif;
@@ -10,6 +11,46 @@ h1 {
   padding: 2%;
   font-weight: bold;
 }
+.myphoto {
+  border-style: none;
+    border-radius: 100%;
+    filter: grayscale(0);
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  width: 200px;
+}
+.myphoto:hover {
+  filter: grayscale(1);
+  border-style: none;
+  border-radius: 100%;
+  transition: background-size 0.3s ease;
+  filter: grayscale(1);
+  transition: background-size 0.3s
+}
+.resume-header {
+ display: inline;
+ top: 20%;
+ right: 15%;
+ position: fixed;
+ color:black; 
+ font-size: 14px;
+ }
+ .centre{
+  float: left;
+  font-family: 'Roboto Slab', serif;
+  padding: 5% 5%;
+  }
+  .leftColumn {
+  width:50%;
+  padding-top: 10%;
+  float:left;
+  }
+  .rightColumn {
+    width:50%;
+    float:right;
+  }
+/* background styles*/
 body {
   font-family: 'Roboto Slab', serif;
     background: url("desk-laptop-macbook-pro-working-69432.jpg");
@@ -24,16 +65,8 @@ body {
     filter: opacity(70%);
     margin: 0;
     }
-     h2 {
-    font-size: 3.5rem;
-    font-weight: 400;
-    text-align: center;
-    font-family: 'Roboto Slab', serif;
-    color: #ef4fa6;
-   }
-
-
-.gallery-item {
+     /*portfolio styles*/
+    .gallery-item {
     max-width: 100%;
     border-radius: 5px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
@@ -81,42 +114,39 @@ body {
     font-size: 2.5em;
     padding: 16px 32px;
     font-family: 'Roboto Slab', serif;
-
 }
-
-  .header-title {
+/*homepage styles */
+.header-title {
   position: fixed;
   top:40%;
   left:50%;
   transform: translate(-50%,-50%);
   white-space: nowrap;
 }
-.myphoto {
-  border-style: none;
-    border-radius: 100%;
-    filter: grayscale(0);
-  position: fixed;
-  top: 20%;
-  left: 10%;
-  width: 200px;
-}
-.myphoto:hover {
-  filter: grayscale(1);
-  border-style: none;
-  border-radius: 100%;
-  transition: background-size 0.3s ease;
-  filter: grayscale(1);
-  transition: background-size 0.3s
-}
-.resume-header {
+i {
+  color: black;
+ font-size: 48px;
  display: inline;
- top: 20%;
- right: 15%;
- position: fixed;
- color:black; 
- font-size: 14px;
- 
+ list-style-type: none;
 }
+a { 
+ text-decoration: none;
+}
+h4 {
+  font-family: 'Roboto Slab', serif;
+    font-size: 70px;
+    color: black;
+    text-align: center;
+}
+
+@media only screen and (max-width: 950px) {
+  h4 p4 {
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+  }
+}
+/* contact styles*/
 .top-header {
   top: 15%;
  left: 20%;
@@ -124,251 +154,185 @@ body {
  color:black; 
  font-size: 20px;
 }
+.contactform {
+  display: block;
+}
+form {
+  padding-top: 10%;
+  }
+  .input-block {
+    width: 10%;
+    float: left;
+    margin: 3.3%;
+    position: relative;
+    margin-bottom: 60px;
+    padding-left: 1%;
+  }
+  .input-block:nth-child(3n) {
+    margin-right: 0px;
+  }
+  .input-block input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #dddddd;
+    font-size: 16px;
+    font-family: inherit;
+   
+    
+  }
+  .textarea-block {
+    clear: both;
+    width: 50%;
+    position: relative;
+    padding-left: 10px;
+    margin: 3.3%;
+    
+   
+  }
+  .textarea-block textarea {
+    width: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #dddddd;
+    
+    font-size: 16px;
+    font-family: inherit;
+    
+  }
+  .textarea-block label,.input-block label {
+color: #696969;
+font-size: 14px;
+text-transform: uppercase;
+position: absolute;
+top: 0px;
+left: 10px;
+transition: all 0.2s linear 0s;
 
-.centre{
-float: left;
-font-family: 'Roboto Slab', serif;
-padding: 5% 5%;
-}
-.leftColumn {
-width:50%;
-padding-top: 10%;
-float:left;
-}
-.rightColumn {
-  width:50%;
-  float:right;
-}
-h4 {
-        font-family: 'Roboto Slab', serif;
-          font-size: 70px;
-          color: black;
-          text-align: center;
-      }
-      
-      @media only screen and (max-width: 950px) {
-        h4 {
-          font-size: 50px;
-          text-align: center;
-          width: 100%;
-        }
-      }
-      p4 {
-        font-family: 'Roboto Slab', serif;
-          font-size: 50px;
-          color: black;
-          text-align: center;
-      }
-      @media only screen and (max-width: 950px) {
-        p4 {
-          font-size: 30px;
-          text-align: center;
-          width: 100%;
-        }
-      }
-      
-        * {
-          margin: 0;
-          padding: 0;
-        }
-        i {
-           color: black;
-          font-size: 48px;
-          display: inline;
-          list-style-type: none;
-         }
-        a { 
-          text-decoration: none;
-        }
-      
-      ul {
-        overflow: auto;
-        list-style-type: none;
-        position: fixed;
-        text-align: center;
-        bottom: 35%;
-        color: black;
-        
-      }
-        .menu {
-          position: fixed;
-          top: 20px;
-          left:0;
-          padding: 20px 5%;
-          font: 20px/1 'Roboto Slab', serif;
-         }
-       
-      
-        li {
-          display: inline;
-          margin-right: 0px;
-          padding: 0 20px;
-          
-          
-        }
-        .social {
-          bottom: 30%;
-          right: 40%;
-          list-style-type: none;
-          text-decoration: none;
-          
-        }
-       
-        li:last-child {
-          border-right: none;
-        }
-       
-        li a {
-          text-decoration: none;
-          color: black;
-          text-transform: uppercase;
-          transition: all 0.5s ease;
-        }
-       
-        li a:hover {
-          color: #ef4fa6;
-        }
-      
-        li.active a {
-          font-weight: bold;
-          color: #333;
-        }
-        
-
-        @media (max-width: 350px) {
-            .gallery-item, body {
-                max-width: 100%;
-                grid-column: 2;
-                font-family: 'Roboto Slab', serif;
-                text-align: left;
-              }
-                .gallery {
-                padding-top: 30px;
-                }
-                form {
-                  position: fixed;
-                  top: 30%;
-                   width: 70px;
-                  }    
-                  form button {
-                    position: fixed;
-                    top: 60%;
-                  }
-                .centre {
-                  max-width: 20%;
-                }  
-                .myphoto {
-                  width: 60px;
-                }
-              }
-                 
-       
-      .contactform {
-        display: block;
-      }
-      form {
-        padding-top: 10%;
-        }
-        .input-block {
-          width: 10%;
-          float: left;
-          margin: 3.3%;
-          position: relative;
-          margin-bottom: 60px;
-          padding-left: 1%;
-        }
-        .input-block:nth-child(3n) {
-          margin-right: 0px;
-        }
-        .input-block input{
-          width: 100%;
-          border: none;
-          outline: none;
-          border-bottom: 2px solid #dddddd;
-          font-size: 16px;
-          font-family: inherit;
-         
-          
-        }
-        .textarea-block {
-          clear: both;
-          width: 50%;
-          position: relative;
-          padding-left: 10px;
-          margin: 3.3%;
-          
-         
-        }
-        .textarea-block textarea {
-          width: 100%;
-          resize: none;
-          border: none;
-          outline: none;
-          border-bottom: 2px solid #dddddd;
-          
-          font-size: 16px;
-          font-family: inherit;
-          
-        }
-        .textarea-block label,.input-block label {
-  color: #696969;
-  font-size: 14px;
-  text-transform: uppercase;
-  position: absolute;
-  top: 0px;
-  left: 10px;
-  transition: all 0.2s linear 0s;
-  
 }
 .textarea-block textarea[required="required"] + label:after,
 .input-block input[required="required"] + label:after {
-  content: "*";
+content: "*";
 }
 form button[type="submit"] {
-  border: 0px;
-  outline: 0px;
-  color: #fff;
-  background-color:#ef4fa6;
-  text-transform: uppercase;
-  font-family: 'Roboto Slab', serif;
-  font-size: 18px;
-  letter-spacing: 2px;
-  padding: 20px 40px;
-  border-radius: 100px;
-  margin: 40px auto;
-  display: block;
-  cursor: pointer;
-  transition: all 0.3s linear 0s;
-  position: fixed;
-  left: 15%;
-  margin: 3.3%;
-  
+border: 0px;
+outline: 0px;
+color: #fff;
+background-color:#ef4fa6;
+text-transform: uppercase;
+font-family: 'Roboto Slab', serif;
+font-size: 18px;
+letter-spacing: 2px;
+padding: 20px 40px;
+border-radius: 100px;
+margin: 40px auto;
+display: block;
+cursor: pointer;
+transition: all 0.3s linear 0s;
+position: fixed;
+left: 15%;
+margin: 3.3%;
 }
 /* hover and click effects */
 @keyframes btn-animation {
-  from {
-    transform: scale(1);
-  }
-  
-  to {
-    transform: scale(0.95);
-  }
+from {
+transform: scale(1);
 }
-
+to {
+transform: scale(0.95);
+}
+}
 form button[type="submit"]:active {
-  animation: btn-animation 0.2s linear 0s alternate 2;
+animation: btn-animation 0.2s linear 0s alternate 2;
 }
-
 form button[type="submit"]:hover {
-  background-color:#424242;
+background-color:#424242;
 }
-
 .input-block input:focus + label,
 .textarea-block textarea:focus + label,
 .input-block input.active + label,
 .textarea-block textarea.active + label{
-  top: -30px;
+top: -30px;
 }
+/*general styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+overflow: auto;
+list-style-type: none;
+position: fixed;
+text-align: center;
+bottom: 35%;
+color: black;
+}
+.menu {
+  position: fixed;
+  top: 20px;
+  left:0;
+  padding: 20px 5%;
+  font: 20px/1 'Roboto Slab', serif;
+ }
+li {
+  display: inline;
+  margin-right: 0px;
+  padding: 0 20px;
+  }
+.social {
+  bottom: 30%;
+  right: 40%;
+  list-style-type: none;
+  text-decoration: none;
+  }
+li:last-child {
+  border-right: none;
+}
+li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+li a:hover {
+  color: #ef4fa6;
+}
+li.active a {
+  font-weight: bold;
+  color: #333;
+}
+@media (min-width:320px) {
+    .gallery-item, body {
+        max-width: 100%;
+        grid-column: 2;
+        font-family: 'Roboto Slab', serif;
+        text-align: left;
+      }
+        .gallery {
+        padding-top: 30px;
+        }
+      }
+        @media (min-width:320px)  {
+        form {
+          position: fixed;
+          top: 30%;
+           width: 70px;
+          }    
+          form button {
+            position: fixed;
+            top: 60%;
+          }
+        .centre {
+          max-width: 20%;
+        }  
+        .myphoto {
+          width: 60px;
+        }
+      }
+                 
+       
+      
 
 
 
