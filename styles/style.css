@@ -121,7 +121,7 @@ body {
       .gallery-item,body {
         max-width: 30%;
         grid-column: 2;
-        font-family: Oswald, sans-serif;
+        font-family: 'Roboto Slab', serif;
         text-align: left;
       }
     }
@@ -170,110 +170,157 @@ p4 {
   }
 }
 /* contact styles*/
-.top-header {
-  top: 15%;
- left: 20%;
- position: fixed;
- color:black; 
- font-size: 20px;
-}
-.contactform {
+
+
+.clear:after {
+  content: "";
   display: block;
+  clear: both;
 }
+
+/* h3 styles */
+h3 {
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* form styles */
 form {
+  margin-top: 0;
   padding-top: 10%;
-  }
-  .input-block {
-    width: 10%;
-    float: left;
-    margin: 3.3%;
-    position: relative;
-    margin-bottom: 60px;
-    padding-left: 1%;
-  }
-  .input-block:nth-child(3n) {
-    margin-right: 0px;
-  }
-  .input-block input{
-    width: 100%;
-    border: none;
-    outline: none;
-    border-bottom: 2px solid #dddddd;
-    font-size: 16px;
-    font-family: inherit;
-   
-    
-  }
-  .textarea-block {
-    clear: both;
-    width: 50%;
-    position: relative;
-    padding-left: 10px;
-    margin: 3.3%;
-    
-   
-  }
-  .textarea-block textarea {
-    width: 100%;
-    resize: none;
-    border: none;
-    outline: none;
-    border-bottom: 2px solid #dddddd;
-    font-size: 16px;
-    font-family: inherit;
-    }
-  .textarea-block label,.input-block label {
-color: #696969;
-font-size: 14px;
-text-transform: uppercase;
-position: absolute;
-top: 0px;
-left: 10px;
-transition: all 0.2s linear 0s;
 }
+
+.input-block {
+  width: 15%;
+  float: left;
+  margin-left: 10%;
+  margin-top: 5%;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.input-block:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.input-block input{
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #dddddd;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.textarea-block {
+  clear: both;
+  width: 70%;
+  position: relative;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.textarea-block textarea {
+  width: 100%;
+  resize: none;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #dddddd;
+  padding: 0px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.textarea-block label,
+.input-block label {
+  color: #696969;
+  font-size: 14px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: all 0.2s linear 0s;
+}
+
 .textarea-block textarea[required="required"] + label:after,
 .input-block input[required="required"] + label:after {
-content: "*";
+  content: "*";
 }
+
 form button[type="submit"] {
-border: 0px;
-outline: 0px;
-color: #fff;
-background-color:#ef4fa6;
-text-transform: uppercase;
-font-family: 'Roboto Slab', serif;
-font-size: 18px;
-letter-spacing: 2px;
-padding: 20px 40px;
-border-radius: 100px;
-margin: 40px auto;
-display: block;
-cursor: pointer;
-transition: all 0.3s linear 0s;
-position: fixed;
-left: 15%;
-margin: 3.3%;
+  border: 0px;
+  outline: 0px;
+  color: #fff;
+  background-color: #ef4fa6;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding: 20px 40px;
+  border-radius: 100px;
+  margin: 40px auto;
+  display: block;
+  cursor: pointer;
+  transition: all 0.3s linear 0s;
+  position: relative;
 }
+
 /* hover and click effects */
 @keyframes btn-animation {
-from {
-transform: scale(1);
+  from {
+    transform: scale(1);
+  }
+  
+  to {
+    transform: scale(0.95);
+  }
 }
-to {
-transform: scale(0.95);
-}
-}
+
 form button[type="submit"]:active {
-animation: btn-animation 0.2s linear 0s alternate 2;
+  animation: btn-animation 0.2s linear 0s alternate 2;
 }
+
 form button[type="submit"]:hover {
-background-color:#424242;
+  background-color: darkmagenta;
 }
+
 .input-block input:focus + label,
 .textarea-block textarea:focus + label,
 .input-block input.active + label,
 .textarea-block textarea.active + label{
-top: -30px;
+  top: -30px;
+}
+
+.input-block .border,
+.textarea-block .border {
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  left: 0px;
+  background: linear-gradient(to right, #f10708 0%,#870804 100%); 
+  transition: all 0.2s linear 0s;
+}
+
+.input-block .border {
+  bottom: 0px;
+}
+
+.textarea-block .border {
+  bottom: 5px;
+}
+
+.input-block input:focus + label + .border,
+.textarea-block textarea:focus + label + .border,
+.input-block input.active + label + .border,
+.textarea-block textarea.active + label + .border {
+  width: 100%;
+}
+
+.input-block input.active + label + .border,
+.textarea-block textarea.active + label + .border {
+  background: linear-gradient(to right, #1ebf05 0%,#013d07 100%);
 }
 /*general styles */
 * {
