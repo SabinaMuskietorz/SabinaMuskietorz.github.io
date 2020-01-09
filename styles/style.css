@@ -110,7 +110,8 @@ body {
         transition: .5s ease;
         backface-visibility: hidden;
         object-fit: cover;
-      }
+        
+}
       
       .middle {
         transition: .5s ease;
@@ -151,6 +152,7 @@ body {
           margin-top: 6%;
         }
          }
+         
       
 /*homepage styles */
 .header-title {
