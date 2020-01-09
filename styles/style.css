@@ -31,6 +31,7 @@
  font-family: 'Roboto Slab', serif;
  font-size: 24px;
  }
+ 
  .leftColumn {
   width:50%;
   padding-top: 13%;
@@ -58,10 +59,7 @@ body {
     margin: 0;
     }
      /*portfolio styles*/
-     * {
-      margin:0;
-      padding:0;
-      }
+     
       :root {
         font-size: 75.5%;
         font-family: 'Roboto Slab', serif;
@@ -78,12 +76,14 @@ body {
         position: relative;
         margin-top: 20%;
         margin-left: 10%;
+        
         }
       .gallery {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 0.3rem;
         grid-auto-rows: minmax(150px, auto);
+        
       }
       .image { 
         opacity: 1;
@@ -183,6 +183,8 @@ h3 {
   color: black;
   text-transform: uppercase;
   font-family: 'Roboto Slab', serif;
+  font-size: 4vw;
+  position: relative;
 }
 /* form styles */
 form {
@@ -316,11 +318,11 @@ bottom: 35%;
 color: black;
 }
 .menu {
-  position: fixed;
+  position: relative;
   top: 20px;
   left:0;
   padding: 20px 5%;
-  font: 20px/1 'Roboto Slab', serif;
+  font: 2vw/1 'Roboto Slab', serif;
  }
 li {
   display: inline;
