@@ -14,8 +14,7 @@ h1 {
 .myphoto {
   border-style: none;
     border-radius: 100%;
-    filter: grayscale(0);
-  position: fixed;
+   position: fixed;
   top: 20%;
   left: 10%;
   width: 200px;
