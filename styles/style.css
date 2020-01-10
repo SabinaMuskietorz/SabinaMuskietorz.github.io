@@ -61,6 +61,7 @@ body {
      :root {
         font-size: 75.5%;
         font-family: 'Roboto Slab', serif;
+        margin: 0;
       }
       .container {
         width: 100rem;
