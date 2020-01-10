@@ -107,9 +107,11 @@ body {
       .container {
         width: 96rem;
         margin: 2rem auto;
+        float: left;
+        margin-left: 3%;
       }
       .gallery-item {
-        max-width: 100%;
+        max-width: 80%;
         border-radius: 5px;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
         transition: all .3s;
@@ -340,8 +342,7 @@ color: black;
 .menu {
   position: relative;
   top: 20px;
-  float: left;
-  font: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 2em;
  }
 li {
@@ -366,6 +367,6 @@ li.active a {
   font-weight: bold;
   color: #333;
 }
-i a:hover {
-  color: #ef4fa6;
+.social :hover {
+  color:#ef4fa6;
 }
