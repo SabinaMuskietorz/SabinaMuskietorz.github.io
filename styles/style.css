@@ -31,21 +31,20 @@
  font-family: 'Roboto Slab', serif;
  font-size: 24px;
  }
- 
  .leftColumn {
   width:50%;
-  padding-top: 13%;
+  padding-top: 9%;
   float:left;
   }
   .rightColumn {
     width:40%;
     float: right;
     margin-right: 10%;
-    padding-top: 15%;
+    padding-top: 12%;
    }
 /* background styles*/
 body {
-  font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', serif;
     background: url("desk-laptop-macbook-pro-working-69432.jpg");
     background-size: cover;
     background-position: center;
@@ -54,13 +53,12 @@ body {
   .back {
     width:100%;
     height: 100%;
-    position: fixed;
+    position: relative;
     filter: opacity(70%);
     margin: 0;
     }
      /*portfolio styles*/
-     
-      :root {
+     :root {
         font-size: 75.5%;
         font-family: 'Roboto Slab', serif;
       }
@@ -76,15 +74,13 @@ body {
         position: relative;
         margin-top: 20%;
         margin-left: 10%;
-        
         }
       .gallery {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 0.3rem;
         grid-auto-rows: minmax(150px, auto);
-        
-      }
+       }
       .image { 
         opacity: 1;
         display: block;
@@ -130,15 +126,18 @@ body {
          }
 /*homepage styles */
 .header-title {
-  position: fixed;
+  position: relative;
   top:40%;
   left:50%;
   transform: translate(-50%,-50%);
   white-space: nowrap;
 }
+.social {
+  margin-left: 3%;
+}
 i {
   color: black;
- font-size: 48px;
+ font-size: 2vw;
  display: inline;
  list-style-type: none;
 }
@@ -147,37 +146,37 @@ a {
 }
 h4 {
   font-family: 'Roboto Slab', serif;
-    font-size: 70px;
+    font-size: 5vw;
     color: black;
     text-align: center;
+    position: relative;
+    margin-top: 15%;
 }
 @media only screen and (max-width: 950px) {
   h4 {
-    font-size: 50px;
+    font-size: 7vw;
     text-align: center;
-    width: 100%;
-  }
+    margin-top: 18%;
+    }
 }
 p4 {
   font-family: 'Roboto Slab', serif;
-    font-size: 50px;
+    font-size: 4vw;
     color: black;
     text-align: center;
+    position: relative;
+    margin-top: 18%;
+    margin-left: 27%;
 }
 @media only screen and (max-width: 950px) {
   p4 {
-    font-size: 30px;
+    font-size: 6vw;
     text-align: center;
-    width: 100%;
-  }
+    margin-top: 20%;
+    margin-left: 20%;
+   }
 }
-/* contact styles*/
-.clear:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-/* h3 styles */
+/* form styles */
 h3 {
   text-align: center;
   color: black;
@@ -186,10 +185,14 @@ h3 {
   font-size: 4vw;
   position: relative;
 }
-/* form styles */
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 form {
   margin-top: 0;
-  padding-top: 10%;
+  padding-top: 11%;
 }
 .input-block {
   width: 15%;
@@ -305,16 +308,11 @@ form button[type="submit"]:hover {
   background: linear-gradient(to right, #1ebf05 0%,#013d07 100%);
 }
 /*general styles */
-* {
-  margin: 0;
-  padding: 0;
-}
 ul {
 overflow: auto;
 list-style-type: none;
-position: fixed;
+position: relative;
 text-align: center;
-bottom: 35%;
 color: black;
 }
 .menu {
@@ -322,18 +320,12 @@ color: black;
   top: 20px;
   left:0;
   padding: 20px 5%;
-  font: 2vw/1 'Roboto Slab', serif;
+  font: 3vw/1 'Roboto Slab', serif;
  }
 li {
   display: inline;
   margin-right: 0px;
-  padding: 0 20px;
-  }
-.social {
-  bottom: 30%;
-  right: 40%;
-  list-style-type: none;
-  text-decoration: none;
+  padding: 0 15px;
   }
 li:last-child {
   border-right: none;
@@ -350,4 +342,7 @@ li a:hover {
 li.active a {
   font-weight: bold;
   color: #333;
+}
+i a:hover {
+  color: #ef4fa6;
 }
