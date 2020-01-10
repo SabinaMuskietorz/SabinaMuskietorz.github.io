@@ -160,7 +160,12 @@ body {
   left:50%;
   transform: translate(-50%,-50%);
   white-space: nowrap;
+  font-family: 'Roboto Slab', serif;
+  font-size: 70px;
+  color: black;
+  text-align: center;
 }
+
 i {
   color: black;
  font-size: 48px;
@@ -170,28 +175,23 @@ i {
 a { 
  text-decoration: none;
 }
-h4 {
-  font-family: 'Roboto Slab', serif;
-    font-size: 70px;
-    color: black;
-    text-align: center;
-}
+  
 
 @media only screen and (max-width: 950px) {
-  h4 {
+  .header-title {
     font-size: 50px;
     text-align: center;
     width: 100%;
   }
 }
-p4 {
+#junior {
   font-family: 'Roboto Slab', serif;
     font-size: 50px;
     color: black;
     text-align: center;
 }
 @media only screen and (max-width: 950px) {
-  p4 {
+  #junior {
     font-size: 30px;
     text-align: center;
     width: 100%;
