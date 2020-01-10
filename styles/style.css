@@ -1,25 +1,17 @@
 /*about styles*/
-h1 {
-  text-transform: uppercase;
-  font-family: 'Roboto Slab', serif;
-}
 .resume {
   font-family: 'Roboto Slab', serif;
-  position: fixed;
-  top: 25%;
-  right: 10%;
-  padding: 2%;
+  font-size: 1.5em;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
 }
 .myphoto {
   border-style: none;
     border-radius: 100%;
     filter: grayscale(0);
-  position: fixed;
-  top: 20%;
-  left: 10%;
-  width: 200px;
-}
+  width: 25vw;
+ }
 .myphoto:hover {
   filter: grayscale(1);
   border-style: none;
@@ -28,27 +20,33 @@ h1 {
   filter: grayscale(1);
   transition: background-size 0.3s
 }
-.resume-header {
- display: inline;
- top: 20%;
- right: 15%;
- position: fixed;
+.resheader {
+ text-transform: uppercase;
+ font-family: 'Roboto Slab', serif;
  color:black; 
- font-size: 14px;
+ font-size: 1.5em;
+  font-weight: bold;
  }
- .centre{
-  float: left;
-  font-family: 'Roboto Slab', serif;
-  padding: 5% 5%;
-  }
+ .skeheader {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.skep {
+  font-size: 1.1em;
+  font-weight: bold;
+}
   .leftColumn {
   width:50%;
-  padding-top: 10%;
   float:left;
+  margin-top: 10%;
   }
   .rightColumn {
-    width:50%;
+    width:40%;
     float:right;
+    position: relative;
+    margin-top: 10%;
+   text-align: center;
+    
   }
 /* background styles*/
 body {
@@ -59,7 +57,7 @@ body {
   }
   /* how to use filter https://developer.mozilla.org/en-US/docs/Web/CSS/filter */
   .back {
-    width:100%;
+    width: 100%;
     height: 100%;
     position: fixed;
     filter: opacity(70%);
@@ -74,16 +72,9 @@ body {
         font-size: 75.5%;
         font-family: 'Roboto Slab', serif;
       }
-      
-      
-      
-      
-      
       .container {
         width: 100rem;
-        
-      }
-      
+        }
       .gallery-item {
         max-width: 70%;
         border-radius: 5px;
@@ -93,16 +84,13 @@ body {
         position: relative;
         margin-top: 20%;
         margin-left: 10%;
-        
-      }
-      
+        }
       .gallery {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 0.3rem;
         grid-auto-rows: minmax(150px, auto);
       }
-      
       .image { 
         opacity: 1;
         display: block;
@@ -112,7 +100,6 @@ body {
         backface-visibility: hidden;
         object-fit: cover;
       }
-      
       .middle {
         transition: .5s ease;
         opacity: 0;
@@ -122,26 +109,21 @@ body {
         transform: translate(-50%, -50%);
         text-align: center;
       }
-      
       .gallery-item:hover .image {
         filter: grayscale(1);
       }
-      
       .gallery-item:hover .middle {
         opacity: 1;
       }
-      
-      .gallery-item:hover {
+       .gallery-item:hover {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
       }
-      
       .text {
         color: white;
         font-size: 2.5em;
           padding: 16px 32px;
           font-family: 'Roboto Slab', serif;
       }
-      
       @media (max-width: 500px) {
         .gallery-item {
           max-width: 20%;
@@ -152,8 +134,7 @@ body {
           margin-top: 6%;
         }
          }
-      
-/*homepage styles */
+      /*homepage styles */
 i {
   color: black;
   font-size: 2vw;
@@ -167,7 +148,7 @@ a {
   transform: translate(-50%,-50%);
   white-space: nowrap;
   font-family: 'Roboto Slab', serif;
-  font-size: 5vw;
+  font-size: 2em;
   color: black;
   text-align: center;
   margin-top: 15%;
@@ -177,12 +158,12 @@ a {
   .header-title {
     margin-top: 18%;
     text-align: center;
-    font-size: 7vw;
+    font-size: 2em;
   }
 }
 #junior {
   font-family: 'Roboto Slab', serif;
-  font-size: 4vw;
+  font-size: 1em;
     color: black;
     text-align: center;
     margin-top: 18%;
@@ -190,13 +171,11 @@ a {
 }
 @media only screen and (max-width: 950px) {
   #junior {
-    font-size: 6vw;
+    font-size: 1em;
     text-align: center;
   }
 }
 /* contact styles*/
-
-
 .clear:after {
   content: "";
   display: block;
@@ -369,7 +348,8 @@ color: black;
   top: 20px;
   left:0;
   padding: 20px 5%;
-  font: 3vw/1 'Roboto Slab', serif;
+  font: 'Roboto Slab', serif;
+  font-size: 2em;
  }
 li {
   display: inline;
