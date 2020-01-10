@@ -135,16 +135,20 @@ body {
         }
          }
       /*homepage styles */
-  .centreColumn {
-  font-family: 'Roboto Slab', serif;
-  font-size: 4em;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-top: 20%;
-  position: relative;
-}
+  .mainhead {
+    font-family: 'Roboto Slab', serif;
+     font-size: 3em;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+      }
+  .sechead {
+    font-family: 'Roboto Slab', serif;
+     font-size: 2.5em;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+  }
 i {
   color: black;
   font-size: 3vw;
@@ -166,6 +170,8 @@ h3 {
   color: black;
   text-transform: uppercase;
   font-family: 'Roboto Slab', serif;
+  position: relative;
+  font-size: 2em;
 }
 * {
   margin: 0;
@@ -307,10 +313,7 @@ form button[type="submit"]:hover {
   background: linear-gradient(to right, #1ebf05 0%,#013d07 100%);
 }
 /*general styles */
-* {
-  margin: 0;
-  padding: 0;
-}
+
 ul {
 overflow: auto;
 list-style-type: none;
