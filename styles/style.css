@@ -1,3 +1,35 @@
+ /*homepage styles */
+ .mainhead {
+  font-family: 'Roboto Slab', serif;
+   font-size: 5em;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  padding-top: 13%;
+    }
+.sechead {
+  font-family: 'Roboto Slab', serif;
+   font-size: 4em;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  padding-top: 2%;
+}
+i {
+color: black;
+font-size: 3.5vw;
+display: inline;
+list-style-type: none;
+}
+.social {
+  list-style-type: none;
+  text-decoration: none;
+  position: relative;
+  padding-top: 3%;
+   }
+a { 
+text-decoration: none;
+}
 /*about styles*/
 .resume {
   font-family: 'Roboto Slab', serif;
@@ -62,8 +94,7 @@ body {
     margin: 0;
     }
      /*portfolio styles*/
-     
-      :root {
+     :root {
         font-size: 75.5%;
         font-family: 'Roboto Slab', serif;
       }
@@ -129,32 +160,7 @@ body {
           margin-top: 6%;
         }
          }
-      /*homepage styles */
-  .mainhead {
-    font-family: 'Roboto Slab', serif;
-     font-size: 3em;
-    font-weight: bold;
-    position: relative;
-    text-align: center;
-    bottom: 20%;
-    
-      }
-  .sechead {
-    font-family: 'Roboto Slab', serif;
-     font-size: 2.5em;
-    font-weight: bold;
-    position: relative;
-    text-align: center;
-  }
-i {
-  color: black;
-  font-size: 3.5vw;
- display: inline;
- list-style-type: none;
-}
-a { 
- text-decoration: none;
-}
+     
 
 /* form styles */
 .clear:after {
@@ -323,7 +329,6 @@ color: black;
   position: relative;
   top: 20px;
   float: left;
-  padding: 20px 5%;
   font: 'Roboto Slab', serif;
   font-size: 2em;
  }
@@ -332,12 +337,7 @@ li {
   margin-right: 0px;
   padding: 0 20px;
   }
-.social {
- list-style-type: none;
-  text-decoration: none;
 
-  position: relative;
-  }
 li:last-child {
   border-right: none;
 }
