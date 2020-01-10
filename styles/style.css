@@ -154,47 +154,44 @@ body {
          }
       
 /*homepage styles */
-.header-title {
-  position: fixed;
-  top:40%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  white-space: nowrap;
-  font-family: 'Roboto Slab', serif;
-  font-size: 70px;
-  color: black;
-  text-align: center;
-}
-
 i {
   color: black;
- font-size: 48px;
+  font-size: 2vw;
  display: inline;
  list-style-type: none;
 }
 a { 
  text-decoration: none;
 }
-  
+.header-title {
+  transform: translate(-50%,-50%);
+  white-space: nowrap;
+  font-family: 'Roboto Slab', serif;
+  font-size: 5vw;
+  color: black;
+  text-align: center;
+  margin-top: 15%;
+}
 
 @media only screen and (max-width: 950px) {
   .header-title {
-    font-size: 50px;
+    margin-top: 18%;
     text-align: center;
-    width: 100%;
+    font-size: 7vw;
   }
 }
 #junior {
   font-family: 'Roboto Slab', serif;
-    font-size: 50px;
+  font-size: 4vw;
     color: black;
     text-align: center;
+    margin-top: 18%;
+    margin-left: 27%;
 }
 @media only screen and (max-width: 950px) {
   #junior {
-    font-size: 30px;
+    font-size: 6vw;
     text-align: center;
-    width: 100%;
   }
 }
 /* contact styles*/
@@ -215,9 +212,13 @@ h3 {
 }
 
 /* form styles */
+* {
+  margin: 0;
+  padding: 0;
+}
 form {
   margin-top: 0;
-  padding-top: 10%;
+  padding-top: 11%;
 }
 
 .input-block {
@@ -358,7 +359,7 @@ form button[type="submit"]:hover {
 ul {
 overflow: auto;
 list-style-type: none;
-position: fixed;
+position: relative;
 text-align: center;
 bottom: 35%;
 color: black;
@@ -368,7 +369,7 @@ color: black;
   top: 20px;
   left:0;
   padding: 20px 5%;
-  font: 20px/1 'Roboto Slab', serif;
+  font: 3vw/1 'Roboto Slab', serif;
  }
 li {
   display: inline;
@@ -380,6 +381,7 @@ li {
   right: 40%;
   list-style-type: none;
   text-decoration: none;
+  padding: 0 15px;
   }
 li:last-child {
   border-right: none;
@@ -396,4 +398,7 @@ li a:hover {
 li.active a {
   font-weight: bold;
   color: #333;
+}
+i a:hover {
+  color: #ef4fa6;
 }
