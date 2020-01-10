@@ -1,18 +1,24 @@
 /*about styles*/
+h1 {
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+}
 .resume {
   font-family: 'Roboto Slab', serif;
-  position: relative;
+  position: fixed;
+  top: 25%;
+  right: 10%;
   padding: 2%;
   font-weight: bold;
-  font-size: 20px;
 }
 .myphoto {
   border-style: none;
     border-radius: 100%;
-   position: relative;
-   margin-left: 10%;
-  width: 20vw;
-  margin-top: 5%;
+    filter: grayscale(0);
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  width: 200px;
 }
 .myphoto:hover {
   filter: grayscale(1);
@@ -24,27 +30,29 @@
 }
 .resume-header {
  display: inline;
- position: relative;
+ top: 20%;
+ right: 15%;
+ position: fixed;
  color:black; 
- font-size: 28px;
- text-transform: uppercase;
- font-family: 'Roboto Slab', serif;
- font-size: 24px;
+ font-size: 14px;
  }
- .leftColumn {
+ .centre{
+  float: left;
+  font-family: 'Roboto Slab', serif;
+  padding: 5% 5%;
+  }
+  .leftColumn {
   width:50%;
-  padding-top: 9%;
+  padding-top: 10%;
   float:left;
   }
   .rightColumn {
-    width:40%;
-    float: right;
-    margin-right: 10%;
-    padding-top: 12%;
-   }
+    width:50%;
+    float:right;
+  }
 /* background styles*/
 body {
-    font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab', serif;
     background: url("desk-laptop-macbook-pro-working-69432.jpg");
     background-size: cover;
     background-position: center;
@@ -53,19 +61,29 @@ body {
   .back {
     width:100%;
     height: 100%;
-    position: relative;
+    position: fixed;
     filter: opacity(70%);
     margin: 0;
     }
      /*portfolio styles*/
-     :root {
+     * {
+      margin:0;
+      padding:0;
+      }
+      :root {
         font-size: 75.5%;
         font-family: 'Roboto Slab', serif;
-        margin: 0;
       }
+      
+      
+      
+      
+      
       .container {
         width: 100rem;
-       }
+        
+      }
+      
       .gallery-item {
         max-width: 70%;
         border-radius: 5px;
@@ -75,13 +93,16 @@ body {
         position: relative;
         margin-top: 20%;
         margin-left: 10%;
-        }
+        
+      }
+      
       .gallery {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 0.3rem;
         grid-auto-rows: minmax(150px, auto);
-       }
+      }
+      
       .image { 
         opacity: 1;
         display: block;
@@ -90,8 +111,9 @@ body {
         transition: .5s ease;
         backface-visibility: hidden;
         object-fit: cover;
-        }
-       .middle {
+      }
+      
+      .middle {
         transition: .5s ease;
         opacity: 0;
         position: absolute;
@@ -100,21 +122,26 @@ body {
         transform: translate(-50%, -50%);
         text-align: center;
       }
+      
       .gallery-item:hover .image {
         filter: grayscale(1);
       }
+      
       .gallery-item:hover .middle {
         opacity: 1;
       }
+      
       .gallery-item:hover {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
       }
+      
       .text {
         color: white;
         font-size: 2.5em;
           padding: 16px 32px;
           font-family: 'Roboto Slab', serif;
       }
+      
       @media (max-width: 500px) {
         .gallery-item {
           max-width: 20%;
@@ -125,20 +152,18 @@ body {
           margin-top: 6%;
         }
          }
+      
 /*homepage styles */
 .header-title {
-  position: relative;
+  position: fixed;
   top:40%;
   left:50%;
   transform: translate(-50%,-50%);
   white-space: nowrap;
 }
-.social {
-  margin-left: 3%;
-}
 i {
   color: black;
- font-size: 2vw;
+ font-size: 48px;
  display: inline;
  list-style-type: none;
 }
@@ -147,54 +172,54 @@ a {
 }
 h4 {
   font-family: 'Roboto Slab', serif;
-    font-size: 5vw;
+    font-size: 70px;
     color: black;
     text-align: center;
-    position: relative;
-    margin-top: 15%;
 }
+
 @media only screen and (max-width: 950px) {
   h4 {
-    font-size: 7vw;
+    font-size: 50px;
     text-align: center;
-    margin-top: 18%;
-    }
+    width: 100%;
+  }
 }
 p4 {
   font-family: 'Roboto Slab', serif;
-    font-size: 4vw;
+    font-size: 50px;
     color: black;
     text-align: center;
-    position: relative;
-    margin-top: 18%;
-    margin-left: 27%;
 }
 @media only screen and (max-width: 950px) {
   p4 {
-    font-size: 6vw;
+    font-size: 30px;
     text-align: center;
-    margin-top: 20%;
-    margin-left: 20%;
-   }
+    width: 100%;
+  }
 }
-/* form styles */
-h3 {
-  text-align: center;
-  color: black;
-  text-transform: uppercase;
-  font-family: 'Roboto Slab', serif;
-  font-size: 4vw;
-  position: relative;
-}
+/* contact styles*/
+
+
 .clear:after {
   content: "";
   display: block;
   clear: both;
 }
+
+/* h3 styles */
+h3 {
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* form styles */
 form {
   margin-top: 0;
-  padding-top: 11%;
+  padding-top: 10%;
 }
+
 .input-block {
   width: 15%;
   float: left;
@@ -203,9 +228,11 @@ form {
   position: relative;
   margin-bottom: 60px;
 }
+
 .input-block:nth-child(3n) {
   margin-right: 0px;
 }
+
 .input-block input{
   width: 100%;
   border: none;
@@ -214,6 +241,7 @@ form {
   font-size: 16px;
   font-family: inherit;
 }
+
 .textarea-block {
   clear: both;
   width: 70%;
@@ -221,6 +249,7 @@ form {
   margin-left: 10%;
   margin-top: 5%;
 }
+
 .textarea-block textarea {
   width: 100%;
   resize: none;
@@ -231,6 +260,7 @@ form {
   font-size: 16px;
   font-family: inherit;
 }
+
 .textarea-block label,
 .input-block label {
   color: #696969;
@@ -241,10 +271,12 @@ form {
   left: 0px;
   transition: all 0.2s linear 0s;
 }
+
 .textarea-block textarea[required="required"] + label:after,
 .input-block input[required="required"] + label:after {
   content: "*";
 }
+
 form button[type="submit"] {
   border: 0px;
   outline: 0px;
@@ -262,27 +294,33 @@ form button[type="submit"] {
   transition: all 0.3s linear 0s;
   position: relative;
 }
+
 /* hover and click effects */
 @keyframes btn-animation {
   from {
     transform: scale(1);
   }
+  
   to {
     transform: scale(0.95);
   }
 }
+
 form button[type="submit"]:active {
   animation: btn-animation 0.2s linear 0s alternate 2;
 }
+
 form button[type="submit"]:hover {
   background-color: darkmagenta;
 }
+
 .input-block input:focus + label,
 .textarea-block textarea:focus + label,
 .input-block input.active + label,
 .textarea-block textarea.active + label{
   top: -30px;
 }
+
 .input-block .border,
 .textarea-block .border {
   position: absolute;
@@ -292,41 +330,56 @@ form button[type="submit"]:hover {
   background: linear-gradient(to right, #f10708 0%,#870804 100%); 
   transition: all 0.2s linear 0s;
 }
+
 .input-block .border {
   bottom: 0px;
 }
+
 .textarea-block .border {
   bottom: 5px;
 }
+
 .input-block input:focus + label + .border,
 .textarea-block textarea:focus + label + .border,
 .input-block input.active + label + .border,
 .textarea-block textarea.active + label + .border {
   width: 100%;
 }
+
 .input-block input.active + label + .border,
 .textarea-block textarea.active + label + .border {
   background: linear-gradient(to right, #1ebf05 0%,#013d07 100%);
 }
 /*general styles */
+* {
+  margin: 0;
+  padding: 0;
+}
 ul {
 overflow: auto;
 list-style-type: none;
-position: relative;
+position: fixed;
 text-align: center;
+bottom: 35%;
 color: black;
 }
 .menu {
-  position: relative;
+  position: fixed;
   top: 20px;
   left:0;
   padding: 20px 5%;
-  font: 3vw/1 'Roboto Slab', serif;
+  font: 20px/1 'Roboto Slab', serif;
  }
 li {
   display: inline;
   margin-right: 0px;
-  padding: 0 15px;
+  padding: 0 20px;
+  }
+.social {
+  bottom: 30%;
+  right: 40%;
+  list-style-type: none;
+  text-decoration: none;
   }
 li:last-child {
   border-right: none;
@@ -343,7 +396,4 @@ li a:hover {
 li.active a {
   font-weight: bold;
   color: #333;
-}
-i a:hover {
-  color: #ef4fa6;
 }
