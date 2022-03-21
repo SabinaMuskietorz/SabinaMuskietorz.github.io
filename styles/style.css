@@ -16,6 +16,20 @@
    text-align: center;
    padding-top: 2%;
  }
+ #body #featured div a {
+	background: #000000;
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	margin: 5px 5px 5px;
+	padding: 16px 16px 16px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#body #featured div a:hover {
+	background: #a30b8f;
+}
  #body div ul li div a.more {
 	background: #000;
 	color: #fff;
@@ -120,7 +134,7 @@
    width: 100%;
    height: 100%;
    position: fixed;
-   filter: opacity(20%);
+   filter: opacity(90%);
    margin: 0;
  }
 
